@@ -1,9 +1,9 @@
 CREATE 
 // Entities: States
-(nrw:State {name: 'Nordrhein-Westfalen', population: 17932651}), 
-(hessen:State {name: 'Hessen', population: 6265809}), 
-(rlp:State {name: 'Rheinland-Pfalz ', population: 4084844 }), 
-(niedersachsen:State {name: 'Niedersachsen', population: 7982448 }),
+(nrw:State {name: 'Nordrhein-Westfalen', population: 18139116, area: 34110.26, state_capital: "Düsseldorf"}), 
+(hessen:State {name: 'Hessen', population: 6391360, area: 21114.94, state_capital: "Wiesbaden"}), 
+(rlp:State {name: 'Rheinland-Pfalz', population: 4159150, area: 19854.21, state_capital: "Mainz"}), 
+(niedersachsen:State {name: 'Niedersachsen', population: 8140242, area: 47709.82, state_capital: "Hannover"}),
 
 // Entities: Geometries
 (nrw_geom:Geometry {url: 'https://github.com/aurioldegbelo/GeomQA/blob/main/data/nrw.geojson'}), 
