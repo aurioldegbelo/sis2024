@@ -11,7 +11,18 @@ CREATE
 (rlp_geom:Geometry {url: ''}), 
 (niedersachsen_geom:Geometry {url: ''}), 
 
-(nrw)-[:HASGEOMETRY]-> (nrw_geom),
-(hessen)<-[:HASGEOMETRY]- (hessen_geom),
-(rlp)-[:HASGEOMETRY]-> (rlp_geom),
-(niedersachsen)-[:HASGEOMETRY]-> (niedersachsen_geom),
+// Relationships State-Geometry
+(nrw)-[:HAS_GEOMETRY]-> (nrw_geom),
+(hessen)<-[:HAS_GEOMETRY]- (hessen_geom),
+(rlp)-[:HAS_GEOMETRY]-> (rlp_geom),
+(niedersachsen)-[:HAS_GEOMETRY]-> (niedersachsen_geom),
+
+// Relationships Geometry-Geometry
+
+nrw_geom -[:TOUCHES]-> (hessen_geom),
+nrw_geom -[:TOUCHES]-> (rlp_geom),
+nrw_geom -[:TOUCHES]-> (niedersachsen_geom),
+
+hessen_geom -[:TOUCHES]-> (nrw_geom),
+rlp_geom -[:TOUCHES]-> (nrw_geom),
+niedersachsen_geom -[:TOUCHES]-> (nrw_geom),
