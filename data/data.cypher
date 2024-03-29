@@ -6,10 +6,10 @@ CREATE
 (niedersachsen:State {name: 'Niedersachsen', population: 7982448 }),
 
 // Geometries
-(nrw_geom:Geometry {url: ''}), 
-(hessen_geom:Geometry {url: ''}), 
-(rlp_geom:Geometry {url: ''}), 
-(niedersachsen_geom:Geometry {url: ''}), 
+(nrw_geom:Geometry {url: 'https://github.com/aurioldegbelo/GeomQA/blob/main/data/nrw.geojson'}), 
+(hessen_geom:Geometry {url: 'https://github.com/aurioldegbelo/GeomQA/blob/main/data/hessen.geojson'}), 
+(rlp_geom:Geometry {url: 'https://github.com/aurioldegbelo/GeomQA/blob/main/data/rheinland-pfalz.geojson'}), 
+(niedersachsen_geom:Geometry {url: 'https://github.com/aurioldegbelo/GeomQA/blob/main/data/niedersachsen.geojson'}), 
 
 // Relationships State-Geometry
 (nrw)-[:HAS_GEOMETRY]-> (nrw_geom),
