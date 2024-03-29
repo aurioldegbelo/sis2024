@@ -24,4 +24,4 @@ nrw_geom -[:TOUCHES]-> (niedersachsen_geom),
 
 hessen_geom -[:TOUCHES]-> (nrw_geom),
 rlp_geom -[:TOUCHES]-> (nrw_geom),
-niedersachsen_geom -[:TOUCHES]-> (nrw_geom),
+niedersachsen_geom -[:TOUCHES]-> (nrw_geom)
