@@ -24,4 +24,10 @@ CREATE
 
 (hessen_geom) -[:TOUCHES]-> (nrw_geom),
 (rlp_geom) -[:TOUCHES]-> (nrw_geom),
-(niedersachsen_geom) -[:TOUCHES]-> (nrw_geom)
+(niedersachsen_geom) -[:TOUCHES]-> (nrw_geom),
+
+(hessen_geom) -[:TOUCHES]-> (rlp_geom),
+(rlp_geom) -[:TOUCHES]-> (hessen_geom),
+
+(niedersachsen_geom) -[:TOUCHES]-> (hessen_geom),
+(hessen_geom) -[:TOUCHES]-> (niedersachsen_geom)
