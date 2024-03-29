@@ -12,7 +12,7 @@ CREATE
 (niedersachsen_geom:Geometry {url: 'https://github.com/aurioldegbelo/GeomQA/blob/main/data/niedersachsen.geojson'}), 
 
 // Relationships State-Geometry
-(nrw)-[:HAS_GEOMETRY]-> (nrw_geom),
+(nrw) -[:HAS_GEOMETRY]-> (nrw_geom),
 (hessen) -[:HAS_GEOMETRY]-> (hessen_geom),
 (rlp) -[:HAS_GEOMETRY]-> (rlp_geom),
 (niedersachsen) -[:HAS_GEOMETRY]-> (niedersachsen_geom),
