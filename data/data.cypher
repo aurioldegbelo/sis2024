@@ -18,10 +18,10 @@ CREATE
 (niedersachsen) -[:HAS_GEOMETRY]-> (niedersachsen_geom),
 
 // Relationships Geometry-Geometry
-nrw_geom -[:TOUCHES]-> (hessen_geom),
-nrw_geom -[:TOUCHES]-> (rlp_geom),
-nrw_geom -[:TOUCHES]-> (niedersachsen_geom),
+(nrw_geom) -[:TOUCHES]-> (hessen_geom),
+(nrw_geom) -[:TOUCHES]-> (rlp_geom),
+(nrw_geom) -[:TOUCHES]-> (niedersachsen_geom),
 
-hessen_geom -[:TOUCHES]-> (nrw_geom),
-rlp_geom -[:TOUCHES]-> (nrw_geom),
-niedersachsen_geom -[:TOUCHES]-> (nrw_geom)
+(hessen_geom) -[:TOUCHES]-> (nrw_geom),
+(rlp_geom) -[:TOUCHES]-> (nrw_geom),
+(niedersachsen_geom) -[:TOUCHES]-> (nrw_geom)
