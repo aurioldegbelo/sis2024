@@ -28,7 +28,7 @@ CREATE
                 start_datetime: "1985-01-01T00:00:00.000Z",
                 end_datetime: "2015-12-31T23:59:59.999Z",
                 proj_epsg: 4326,
-                eop_sensorType: "SYNTHESIS";
+                eop_sensorType: "SYNTHESIS",
                 bbox: "[31.98981575125187, -16.010134319691762, 34.01021665676509, -13.989733414178545]",
                 source: "https://geoservice.dlr.de/eoc/ogc/stac/v1/collections/WSF_Evolution/items/WSFevolution_v1_32_-16?f=application/geo%2Bjson"}), 
 (iW12652:Item {id: "WSFevolution_v1_26_52",
