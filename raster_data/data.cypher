@@ -68,5 +68,4 @@ CREATE
 (item:N26E43) -[:HAS_OVERVIEW]-> (overview:N26E43),
 (item:N35E45) -[:HAS_OVERVIEW]-> (overview:N35E45),
 (item:N34E42) -[:HAS_OVERVIEW]-> (overview:N34E42),
-(item:N33E43) -[:HAS_OVERVIEW]-> (overview:N33E43),
-
+(item:N33E43) -[:HAS_OVERVIEW]-> (overview:N33E43)
