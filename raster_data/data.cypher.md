@@ -1,15 +1,24 @@
 CREATE 
 // Entities: Items
-(nrw:State {name: 'Nordrhein-Westfalen', population: 18139116, area: 34110.26, state_capital: "Düsseldorf"}), 
+(item:N26E43 {id: "ids_100m_building_height_median_100kmN26E43", collection: "IOER_STRUCTURE_HEIGHT_GER_100M", created: "2023-06-05T17:53:52.582+00:00", updated: "2023-06-05T17:53:52.582+00:00", datetime: "2023-06-05T17:49:05.206675Z", eop:sensorType: "SYNTHESIS", grid:code: "ETRS_1989_LAEA", proj:crs: "3035", bbox: "[9.721932749998519,47.26818026776248, 11.046005504476401, 47.413251012534026]"}), 
+
+
 (hessen:State {name: 'Hessen', population: 6391360, area: 21114.94, state_capital: "Wiesbaden"}), 
+
+
 (rlp:State {name: 'Rheinland-Pfalz', population: 4159150, area: 19854.21, state_capital: "Mainz"}), 
+
+
 (niedersachsen:State {name: 'Niedersachsen', population: 8140242, area: 47709.82, state_capital: "Hannover"}),
 
-// Entities: Geometries
-(nrw_geom:Geometry {url: 'https://github.com/aurioldegbelo/GeomQA/blob/main/data/nrw.geojson'}), 
-(hessen_geom:Geometry {url: 'https://github.com/aurioldegbelo/GeomQA/blob/main/data/hessen.geojson'}), 
-(rlp_geom:Geometry {url: 'https://github.com/aurioldegbelo/GeomQA/blob/main/data/rheinland-pfalz.geojson'}), 
-(niedersachsen_geom:Geometry {url: 'https://github.com/aurioldegbelo/GeomQA/blob/main/data/niedersachsen.geojson'}), 
+
+
+
+// Entities: Parent
+
+// Entities: Root
+
+
 
 // Relationships State-Geometry
 (nrw) -[:HAS_GEOMETRY]-> (nrw_geom),
