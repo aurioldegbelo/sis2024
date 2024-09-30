@@ -58,7 +58,9 @@ CREATE
                      description: "Overview rendered in black/white as 4096x4096 pixel PNG file"}),
 
 // Entities: Collection
-(col:1 Collection {id: ""}),
+(cIOER:Collection {id: "IOER_STRUCTURE_HEIGHT_GER_100M", title: "IOER Building Structure - Height Median - Germany, 100m",
+description: "IOER Surface Coverage complete depicts the building height median in meter with a resolution of 100m. The dataset is part of the NFDI4Earth pilot and is presented in cooperation with EOC Geoservice."
+}),
 
 // Relationships Items-Thumbnail
 (iN26E43) -[:HAS_THUMBNAIL]-> (tN26E43),
@@ -73,8 +75,9 @@ CREATE
 (iN34E42) -[:HAS_OVERVIEW]-> (oN34E42),
 (iN33E43) -[:HAS_OVERVIEW]-> (oN33E43)
 
-(iN26E43) -[:PART_OF]-> (tN26E43),
-(iN35E45) -[:PART_OF]-> (tN35E45),
-(iN34E42) -[:PART_OF]-> (tN34E42),
-(iN33E43) -[:PART_OF]-> (tN33E43),
+// Relationships PART-OF
+(iN26E43) -[:PART_OF]-> (cIOER),
+(iN35E45) -[:PART_OF]-> (cIOER)
+
+
 
