@@ -9,7 +9,7 @@ CREATE
                    grid_code: "ETRS_1989_LAEA", 
                    proj_crs: "3035", 
                    bbox: "[9.721932749998519,47.26818026776248, 11.046005504476401, 47.413251012534026]", 
-                   source: ""}), 
+                   source: "https://geoservice.dlr.de/eoc/ogc/stac/v1/collections/IOER_STRUCTURE_HEIGHT_GER_100M/items/ids_100m_building_height_median_100kmN26E43?f=application/geo%2Bjson"}), 
 (iN35E45:Item {id: "ids_100m_building_height_median_100kmN35E45", 
               collection: "IOER_STRUCTURE_HEIGHT_GER_100M", 
               created: "2023-06-05T17:53:52.131+00:00",
@@ -19,7 +19,7 @@ CREATE
               grid_code: "ETRS_1989_LAEA",
               proj_crs: "3035",
               bbox: "[12.76791977878606, 54.53122757473991, 14.359795507754942, 55.03224155318573]",
-              source: ""}), 
+              source: "https://geoservice.dlr.de/eoc/ogc/stac/v1/collections/IOER_STRUCTURE_HEIGHT_GER_100M/items/ids_100m_building_height_median_100kmN35E45?f=application/geo%2Bjson"}), 
 (iW13216:Item {id: "WSFevolution_v1_32_-16",
                 collection: "WSF_Evolution",
                 created: "2022-09-22T07:28:43.083+00:00",
@@ -72,6 +72,7 @@ description: "IOER Surface Coverage complete depicts the building height median 
 title: "World Settlement Footprint (WSF) Evolution",
 description: "The World Settlement Footprint (WSF) Evolution is a 30m resolution dataset derived from Landsat-5/7 outlining the global settlement extent on a yearly basis from 1985 to 2015",
 }),
+
 // Relationships Items-Thumbnail
 (iN26E43) -[:HAS_THUMBNAIL]-> (tN26E43),
 (iN35E45) -[:HAS_THUMBNAIL]-> (tN35E45),
@@ -89,6 +90,3 @@ description: "The World Settlement Footprint (WSF) Evolution is a 30m resolution
 (iN35E45) -[:PART_OF]-> (cIOER)
 (iW13216) -[:PART_OF]-> (cWSF)
 (iW12652) -[:PART_OF]-> (cWSF)
-
-
-
