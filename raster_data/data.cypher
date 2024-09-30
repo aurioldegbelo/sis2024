@@ -50,6 +50,9 @@ CREATE
                      description: "Thumbnail rendered in black/white as 512x512 pixel PNG file"}),
 (tW13216:Thumbnail {link: "https://download.geoservice.dlr.de/WSF_EVO/files/WSFevolution_v1_32_-16/WSFevolution_v1_32_-16_thumbnail.png", 
                      description: "Thumbnail rendered in black/white as 512x512 pixel PNG file"}),
+(tW12652:Thumbnail {link: "https://download.geoservice.dlr.de/WSF_EVO/files/WSFevolution_v1_26_52/WSFevolution_v1_26_52_thumbnail.png", 
+                     description: "Thumbnail rendered in black/white as 512x512 pixel PNG file"}),
+
 
 // Entities: Overview
 (oN26E43:Overview {link: "https://download.geoservice.dlr.de/ioer/files/100m_building_structure/height_median/ids_100m_building_height_median_100kmN26E43_overview.png",
@@ -58,30 +61,34 @@ CREATE
                      description: "Overview rendered in black/white as 4096x4096 pixel PNG file"}),
 (oW13216:Overview {link: "https://download.geoservice.dlr.de/WSF_EVO/files/WSFevolution_v1_32_-16/WSFevolution_v1_32_-16_overview.png",
                      description: "Overview rendered in black/white as 4096x4096 pixel PNG file"}),
-
+(oW12652:Overview {link: "https://download.geoservice.dlr.de/WSF_EVO/files/WSFevolution_v1_26_52/WSFevolution_v1_26_52_overview.png",
+                     description: "Overview rendered in black/white as 4096x4096 pixel PNG file"}),
 
 // Entities: Collection
 (cIOER:Collection {id: "IOER_STRUCTURE_HEIGHT_GER_100M", title: "IOER Building Structure - Height Median - Germany, 100m",
 description: "IOER Surface Coverage complete depicts the building height median in meter with a resolution of 100m. The dataset is part of the NFDI4Earth pilot and is presented in cooperation with EOC Geoservice."
 }),
-
+(cWSF:Collection {id: "WSF_Evolution",
+title: "World Settlement Footprint (WSF) Evolution",
+description: "The World Settlement Footprint (WSF) Evolution is a 30m resolution dataset derived from Landsat-5/7 outlining the global settlement extent on a yearly basis from 1985 to 2015",
+}),
 // Relationships Items-Thumbnail
 (iN26E43) -[:HAS_THUMBNAIL]-> (tN26E43),
 (iN35E45) -[:HAS_THUMBNAIL]-> (tN35E45),
 (iW13216) -[:HAS_THUMBNAIL]-> (tW13216),
-(iN33E43) -[:HAS_THUMBNAIL]-> (tN33E43),
-
+(iW12652) -[:HAS_THUMBNAIL]-> (tW12652),
 
 // Relationships Items-Overview
 (iN26E43) -[:HAS_OVERVIEW]-> (oN26E43),
 (iN35E45) -[:HAS_OVERVIEW]-> (oN35E45),
 (iW13216) -[:HAS_OVERVIEW]-> (oW13216),
-(iN33E43) -[:HAS_OVERVIEW]-> (oN33E43)
+(iW12652) -[:HAS_OVERVIEW]-> (oW12652)
 
 // Relationships PART-OF
 (iN26E43) -[:PART_OF]-> (cIOER),
 (iN35E45) -[:PART_OF]-> (cIOER)
 (iW13216) -[:PART_OF]-> (cWSF)
+(iW12652) -[:PART_OF]-> (cWSF)
 
 
 
