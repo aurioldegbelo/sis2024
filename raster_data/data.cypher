@@ -86,6 +86,6 @@ description: "The World Settlement Footprint (WSF) Evolution is a 30m resolution
 
 // Relationships PART-OF
 (iN26E43) -[:PART_OF]-> (cIOER),
-(iN35E45) -[:PART_OF]-> (cIOER)
-(iW13216) -[:PART_OF]-> (cWSF)
+(iN35E45) -[:PART_OF]-> (cIOER),
+(iW13216) -[:PART_OF]-> (cWSF),
 (iW12652) -[:PART_OF]-> (cWSF)
