@@ -41,7 +41,7 @@ CREATE
               proj_epsg: 4326,
               eop_sensorType: "SYNTHESIS",
               bbox: "[25.98978830556076, 51.98981740536049, 28.01018921107398, 54.010218310873704]",
-              source: "https://geoservice.dlr.de/eoc/ogc/stac/v1/collections/WSF_Evolution/items/WSFevolution_v1_26_52?f=application/geo%2Bjson" })
+              source: "https://geoservice.dlr.de/eoc/ogc/stac/v1/collections/WSF_Evolution/items/WSFevolution_v1_26_52?f=application/geo%2Bjson"}),
 
 // Entities: Thumbnail
 (tN26E43:Thumbnail {link: "https://download.geoservice.dlr.de/ioer/files/100m_building_structure/height_median/ids_100m_building_height_median_100kmN26E43_thumbnail.png", 
@@ -70,7 +70,7 @@ description: "IOER Surface Coverage complete depicts the building height median 
 }),
 (cWSF:Collection {id: "WSF_Evolution",
 title: "World Settlement Footprint (WSF) Evolution",
-description: "The World Settlement Footprint (WSF) Evolution is a 30m resolution dataset derived from Landsat-5/7 outlining the global settlement extent on a yearly basis from 1985 to 2015" }),
+description: "The World Settlement Footprint (WSF) Evolution is a 30m resolution dataset derived from Landsat-5/7 outlining the global settlement extent on a yearly basis from 1985 to 2015"}),
 
 // Relationships Items-Thumbnail
 (iN26E43) -[:HAS_THUMBNAIL]-> (tN26E43),
@@ -82,7 +82,7 @@ description: "The World Settlement Footprint (WSF) Evolution is a 30m resolution
 (iN26E43) -[:HAS_OVERVIEW]-> (oN26E43),
 (iN35E45) -[:HAS_OVERVIEW]-> (oN35E45),
 (iW13216) -[:HAS_OVERVIEW]-> (oW13216),
-(iW12652) -[:HAS_OVERVIEW]-> (oW12652)
+(iW12652) -[:HAS_OVERVIEW]-> (oW12652),
 
 // Relationships PART-OF
 (iN26E43) -[:PART_OF]-> (cIOER),
