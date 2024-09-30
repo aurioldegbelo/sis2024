@@ -18,7 +18,7 @@ CREATE
               grid_code: "ETRS_1989_LAEA",
               proj_crs: "3035",
               bbox: "[12.76791977878606, 54.53122757473991, 14.359795507754942, 55.03224155318573]"}), 
-(N34E42:Item {id: "ids_100m_building_height_median_100kmN34E42",
+(iN34E42:Item {id: "ids_100m_building_height_median_100kmN34E42",
                    collection: "IOER_STRUCTURE_HEIGHT_GER_100M",
                    created: "2023-06-05T17:53:51.858+00:00",
                    updated: "2023-06-05T17:53:51.858+00:00",
@@ -57,6 +57,9 @@ CREATE
 (oN33E43:Overview {link: "https://download.geoservice.dlr.de/ioer/files/100m_building_structure/height_median/ids_100m_building_height_median_100kmN33E43_overview.png",
                      description: "Overview rendered in black/white as 4096x4096 pixel PNG file"}),
 
+// Entities: Collection
+(col:1 Collection {id: ""}),
+
 // Relationships Items-Thumbnail
 (iN26E43) -[:HAS_THUMBNAIL]-> (tN26E43),
 (iN35E45) -[:HAS_THUMBNAIL]-> (tN35E45),
@@ -69,3 +72,9 @@ CREATE
 (iN35E45) -[:HAS_OVERVIEW]-> (oN35E45),
 (iN34E42) -[:HAS_OVERVIEW]-> (oN34E42),
 (iN33E43) -[:HAS_OVERVIEW]-> (oN33E43)
+
+(iN26E43) -[:PART_OF]-> (tN26E43),
+(iN35E45) -[:PART_OF]-> (tN35E45),
+(iN34E42) -[:PART_OF]-> (tN34E42),
+(iN33E43) -[:PART_OF]-> (tN33E43),
+
