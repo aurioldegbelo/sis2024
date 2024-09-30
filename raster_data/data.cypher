@@ -49,9 +49,9 @@ CREATE
 
 // Entities: Overview
 (oN26E43:Overview {link: "https://download.geoservice.dlr.de/ioer/files/100m_building_structure/height_median/ids_100m_building_height_median_100kmN26E43_overview.png",
-                     description: "Overview rendered in black/white as 4096x4096 pixel PNG file"})
+                     description: "Overview rendered in black/white as 4096x4096 pixel PNG file"}),
 (oN35E45:Overview {link: "https://download.geoservice.dlr.de/ioer/files/100m_building_structure/height_median/ids_100m_building_height_median_100kmN35E45_overview.png",
-                     description: "Overview rendered in black/white as 4096x4096 pixel PNG file"})
+                     description: "Overview rendered in black/white as 4096x4096 pixel PNG file"}),
 (oN34E42:Overview {link: "https://download.geoservice.dlr.de/ioer/files/100m_building_structure/height_median/ids_100m_building_height_median_100kmN34E42_overview.png",
                      description: "Overview rendered in black/white as 4096x4096 pixel PNG file"}),
 (oN33E43:Overview {link: "https://download.geoservice.dlr.de/ioer/files/100m_building_structure/height_median/ids_100m_building_height_median_100kmN33E43_overview.png",
