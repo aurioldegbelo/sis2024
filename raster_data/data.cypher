@@ -58,14 +58,14 @@ CREATE
                      description: "Overview rendered in black/white as 4096x4096 pixel PNG file"}),
 
 // Relationships Items-Thumbnail
-(item:N26E43) -[:HAS_THUMBNAIL]-> (tumb:N26E43),
-(item:N35E45) -[:HAS_THUMBNAIL]-> (tumb:N35E45),
-(item:N34E42) -[:HAS_THUMBNAIL]-> (tumb:N34E42),
-(item:N33E43) -[:HAS_THUMBNAIL]-> (tumb:N33E43),
+(iN26E43) -[:HAS_THUMBNAIL]-> (tN26E43),
+(iN35E45) -[:HAS_THUMBNAIL]-> (tN35E45),
+(iN34E42) -[:HAS_THUMBNAIL]-> (tN34E42),
+(iN33E43) -[:HAS_THUMBNAIL]-> (tN33E43),
 
 
 // Relationships Items-Overview
-(item:N26E43) -[:HAS_OVERVIEW]-> (overview:N26E43),
-(item:N35E45) -[:HAS_OVERVIEW]-> (overview:N35E45),
-(item:N34E42) -[:HAS_OVERVIEW]-> (overview:N34E42),
-(item:N33E43) -[:HAS_OVERVIEW]-> (overview:N33E43)
+(iN26E43) -[:HAS_OVERVIEW]-> (oN26E43),
+(iN35E45) -[:HAS_OVERVIEW]-> (oN35E45),
+(iN34E42) -[:HAS_OVERVIEW]-> (oN34E42),
+(iN33E43) -[:HAS_OVERVIEW]-> (oN33E43)
