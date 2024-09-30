@@ -6,8 +6,8 @@ CREATE
                    updated: "2023-06-05T17:53:52.582+00:00", 
                    datetime: "2023-06-05T17:49:05.206675Z", 
                    eop_sensorType: "SYNTHESIS", 
-                   grid:code: "ETRS_1989_LAEA", 
-                   proj:crs: "3035", 
+                   grid_code: "ETRS_1989_LAEA", 
+                   proj_crs: "3035", 
                    bbox: "[9.721932749998519,47.26818026776248, 11.046005504476401, 47.413251012534026]"}), 
 (item:N35E45 {id: "ids_100m_building_height_median_100kmN35E45", 
               collection: "IOER_STRUCTURE_HEIGHT_GER_100M", 
@@ -15,8 +15,8 @@ CREATE
               updated: "2023-06-05T17:53:52.131+00:00",
               datetime: "2023-06-05T17:49:03.460211Z",
               eop_sensorType: "SYNTHESIS",
-              grid:code: "ETRS_1989_LAEA",
-              proj:crs: "3035",
+              grid_code: "ETRS_1989_LAEA",
+              proj_crs: "3035",
               bbox: "[12.76791977878606, 54.53122757473991, 14.359795507754942, 55.03224155318573]"}), 
 (item:N34E42 {id: "ids_100m_building_height_median_100kmN34E42",
                    collection: "IOER_STRUCTURE_HEIGHT_GER_100M",
@@ -33,8 +33,8 @@ CREATE
                    updated: "2023-06-05T17:53:51.423+00:00",
                    datetime: "2023-06-05T17:49:01.941589Z",
                    eop_sensorType: "SYNTHESIS",
-                   grid:code: "ETRS_1989_LAEA",
-                   proj:crs: "3035", 
+                   grid_code: "ETRS_1989_LAEA",
+                   proj_crs: "3035", 
                    bbox: "[9.682032900163954, 52.80309977773747, 11.196067070437314, 53.70702802650191]"}), 
 
 // Entities: Thumbnail
@@ -65,7 +65,6 @@ CREATE
 
 
 // Relationships Items-Overview
-
 (item:N26E43) -[:HAS_OVERVIEW]-> (overview:N26E43),
 (item:N35E45) -[:HAS_OVERVIEW]-> (overview:N35E45),
 (item:N34E42) -[:HAS_OVERVIEW]-> (overview:N34E42),
