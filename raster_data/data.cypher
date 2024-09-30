@@ -70,8 +70,7 @@ description: "IOER Surface Coverage complete depicts the building height median 
 }),
 (cWSF:Collection {id: "WSF_Evolution",
 title: "World Settlement Footprint (WSF) Evolution",
-description: "The World Settlement Footprint (WSF) Evolution is a 30m resolution dataset derived from Landsat-5/7 outlining the global settlement extent on a yearly basis from 1985 to 2015",
-}),
+description: "The World Settlement Footprint (WSF) Evolution is a 30m resolution dataset derived from Landsat-5/7 outlining the global settlement extent on a yearly basis from 1985 to 2015" }),
 
 // Relationships Items-Thumbnail
 (iN26E43) -[:HAS_THUMBNAIL]-> (tN26E43),
