@@ -1,0 +1,19 @@
+{
+"type": "FeatureCollection",
+"features": [],
+"numberMatched": 57,
+"numberReturned": 20,
+"stac_version": "1.0.0",
+"links": [
+{
+"type": "application/geo+json",
+"rel": "next",
+"href": "https://geoservice.dlr.de/eoc/ogc/stac/v1/collections/IOER_STRUCTURE_HEIGHT_GER_100M/items?f=json&startIndex=20&limit=20"
+},
+{
+"type": "application/geo+json",
+"rel": "self",
+"href": "https://geoservice.dlr.de/eoc/ogc/stac/v1/collections/IOER_STRUCTURE_HEIGHT_GER_100M/items?f=json"
+}
+]
+}
