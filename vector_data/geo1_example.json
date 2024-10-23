@@ -5,8 +5,7 @@
       "type": "Feature",
       "properties": {
         "Name": "GEO1",
-         "id": 0
-
+        "id": 0
       },
       "geometry": {
         "coordinates": [
@@ -51,8 +50,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Bistro Denkpause", 
-         "id": 1
+        "Name": "Bistro Denkpause",
+        "id": 1
       },
       "geometry": {
         "coordinates": [
@@ -93,7 +92,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "King Kebab", 
+        "Name": "King Kebab",
         "id": 2
       },
       "geometry": {
@@ -131,8 +130,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Krimphove", 
-         "id": 3
+        "Name": "Krimphove",
+        "id": 3
       },
       "geometry": {
         "coordinates": [
@@ -160,6 +159,20 @@
           ]
         ],
         "type": "Polygon"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "ifgi", 
+        "id": 4
+      },
+      "geometry": {
+        "coordinates": [
+          7.595832337940408,
+          51.96959134405893
+        ],
+        "type": "Point"
       }
     }
   ]
